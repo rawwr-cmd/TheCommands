@@ -1,0 +1,76 @@
+    1  ls
+    2  ping google.com
+    3  /proc/meminfo
+    4  man sudo_root
+    5  git
+    6  mkdir hi
+    7  pwd
+    8  ls
+    9  cd hi
+   10  mkdir kali.js
+   11  vi kali.js
+   12  vi mk.js
+   13  vi pop.js
+   14  sudo apt update && sudo apt upgrade
+   15  sudo apt i gnome-tweaks 
+   16  sudo apt install gnome-tweaks 
+   17  sudo apt install gnome-shell-extensions
+   18  ls
+   19  ls -a
+   20  cd .icons/
+   21  history
+   22  history
+   23  sudo apt install ubuntu-restricted-extras && sudo apt install vlc 
+   24  lspci
+   25  gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize' 
+   26  ls
+   27  sudo systemctl status ufw
+   28  sudo systemctl enable ufw
+   29  sudo systemctl install gufw
+   30  sudo systemctl status ufw
+   31  sudo apt install gufw
+   32  history
+   33  lspci
+   34  sudo ufw allow 22/tcp
+   35  sudo ufw status
+   36  sudo ufw deny 22/tcp
+   37  sudo apt install flatpak 
+   38  sudo gedit /usr/share/applications/google-chrome.desktop
+   39  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+   40  sudo apt install gnome-software-plugin-flatpak
+   41  neofetch
+   42  sudo apt install neofetch
+   43  neofetch
+   44  sudo apt install htop
+   45  sudo htop
+   46  sudo apt install preload
+   47  sudo install timeshift
+   48  sudo apt  install timeshift
+   49  sudo systemctl enable tlp 
+   50  sudo apt get-purge chrome
+   51  sudo apt-get purge chrome
+   52  sudo apt-get remove chrome
+   53  sudo apt-remove
+   54  sudo apt get-purge chrome
+   55  sudo apt-get remove chrome
+   56  sudo dpkg -r google-chrome-stable
+   57  flatpak install flathub com.google.chrome
+   58  pwd
+   59  ls
+   60  sudo dpkg -i /home/rawwr/Downloads/google-chrome-stable_current_amd64.deb
+   61  sudo apt-get -f install
+   62  history
+   63  neofetch
+   64  sudo htop
+   65  history
+   66  lspci
+   67  history
+   68  flatpak install flathub com.discordapp.Discord
+   69  flatpak run com.discordapp.Discord
+   70  clear
+   71  history
+   72  clear
+   73  history
+   74  neofetch
+   75  sudo apt install gnome-shell-extension-gpaste
+   76  history
