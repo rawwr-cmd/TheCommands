@@ -112,5 +112,5 @@
   133  nvim test.py
   134  nvim init.vim
   135  nvim test.py
-
+  136  dpkg --list
 
