@@ -1,5 +1,5 @@
 # Navigation (use with numbers to jump) for development mode
-# Mix undo, redo, commenting etc alomost everything can be combined with numbers
+# Mix copy(y), undo, redo, commenting etc alomost everything can be combined with numbers
 
 
 ## j - down
@@ -21,6 +21,7 @@
 ## v - visual mode
 ## w - to the next word
 ## b - before the word
+## e - last of the  word
 ## W - to the next word (without considering the word)
 ## B - to the before word (without considering the word)
 ## y - copy
@@ -30,9 +31,15 @@
 ## db - delete a word before ( u can use with numbers too like d2b or 2db)
 ## diw - delete in a word 
 ## ciw - change + insertion in a sentence
+## di* - in a quotaion mark (deletion)
 ## C - delete + insertion from the letter to the last of the line 
 ## cc - insertion from the start of the line an deleting the rest
-
+## 0 - begging of the line  (as a movement)
+## $ - last of the line (as a movement)
+## d0 - deletion from the word to the start (as a movement) 
+## d$ - deletion from the word to the end ("")
+## de - deletion of a word to the last ("")
+## yiw - copying a word
 
 # in visual mode
 
