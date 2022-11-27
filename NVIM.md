@@ -17,4 +17,6 @@
 ## A - insert (to the last of the line)
 ## o - jump to the new line below
 ## O - jump to the new line above
-
+## v - visual mode
+## y - copy
+## p - paste
