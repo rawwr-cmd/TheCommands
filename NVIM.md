@@ -34,7 +34,7 @@
 ## diw - delete in a word (u can use number too)
 ## ciw - change + insertion in a sentence
 
-# Quotion can be replced with anything(any symbol-between)
+# Quotation can be replaced with anything(any symbol-between)
 ## di" - in a quotaion mark (deletion)
 ## yi" - in a quotation or any mark (copy)
 ## ci" - cut plus insertion in a quotaion mark (in a quotation)
