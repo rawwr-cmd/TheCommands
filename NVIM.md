@@ -1,5 +1,5 @@
 # Navigation (use with numbers to jump) for development mode
-# Mix undo, redo, commenting with numbers
+# Mix undo, redo, commenting etc alomost everything can be combined with numbers
 
 
 ## j - down
