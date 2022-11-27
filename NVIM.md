@@ -1,4 +1,7 @@
 # Navigation (use with numbers to jump) for development mode
+# Mix undo, redo, commenting with numbers
+
+
 ## j - down
 ## k - up
 ## l -right
