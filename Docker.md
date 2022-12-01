@@ -35,6 +35,16 @@
 ## docker system prune 
 ## docker container ls
 ## docker logs c2ba
+## docker exec -it <container_id> <command to execute> (execute an additional command in a container, -it: allow us to provide input to the container, to provide input, -i: stdin i.e stuff i type, -t: stdin and stdout comes out in a nicely formatted manner on the screen)
+## docker exec -it 99700 redis-cli (example)
+## docker exec -it <container_id> sh (getting a command prompt, shell inside a container)
+    -echo hi
+    -export b=7
+    -echo $b
+    -redis-cli
+#### ctrl + d  (to get out of the terminal)
+## docker run -it busybox sh (starting with a shell)
+
 
 # ----------------------------------------------------------------------
 
