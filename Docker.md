@@ -18,18 +18,28 @@
 ## docker start containerIdOrName
 ## docker start -a 832 (adding 'a' will watch the output coming from container) 
 ## docker stop 832
+## docker kill 832 (to force stop the container)
 ## docker restart 832 (Restart one or more containers)
 ## docker container stop 832
 ## docker container inspect ff521fa58db3
-## docker container prune
-## docker system prune -a
+## docker container prune (WARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all dangling images
+  - all dangling build cache)
+## docker system prune -a (WARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all images without at least one container associated to them
+  - all build cache)
 ## docker system prune 
 ## docker container ls
 ## docker logs c2ba
 
+# ----------------------------------------------------------------------
 
 ## docker images
-## docker run imageName (creating and running container from an image)
+## docker run imageName (creating/installing an image and running container from an image)
 ## docker run busybox echo hi (these commands are available in the busybox)
 ## docker run busybox ls  (these commands are available in the busybox)
 ## docker run busybox ping google.com (these commands are available in the busybox)
@@ -39,3 +49,10 @@
 ## docker image inspect 100229ba687e
 ## docker image remove mysql
 ## docker run -d -p 5001:8080 in28min/hello-world-rest-api:0.0.1.RELEASE
+
+# ------------------------------------------
+## docker system
+## docker system df
+## docker system info
+
+
