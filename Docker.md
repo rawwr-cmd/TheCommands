@@ -82,10 +82,10 @@ RUN apk add --update gcc
 ### Tell the image what to do when it starts as a container
 CMD ["redis-server"]
 
-## ---------------------------------------------------building-----------------------------------------------------
+## ---------------------------------------------------building-------------------------------------------
 ### docker build .
 ## docker run 9d86
 ## docker build -t dockerId/myrepo:(version) .
 ###  docker build -t chipmunkey/anynameofmychoice:latest .      (example)
-###  docker build -t chipmunkey/hello-world-java:0.0.2.RELEASE . (. specifies the directory of files/folders to use for the build)
+###  docker build -t chipmunkey/hello-world-java:0.0.2.RELEASE . (. specifies the directory of files/folders to use for the build, t for tagging)
 ### docker run chipmunkey/anynameofmychoice                      (latest version of the image will be used by default)
