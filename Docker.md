@@ -38,7 +38,7 @@
 ## docker container ls
 ## docker logs c2ba
 ## docker exec -it <container_id> <command to execute> (execute an additional command in a container, -it: allow us to provide input to the container, to provide input, -i: stdin i.e stuff i type, -t: stdin and stdout comes out in a nicely formatted manner on the screen)
-## docker exec -it 99700 redis-cli (example)
+## docker exec -it 99700 redis-cli (example, works only when container is running)
 ## docker exec -it <container_id> sh (getting a command prompt, shell inside a container)
     -echo hi
     -export b=7
@@ -82,7 +82,7 @@ RUN apk add --update gcc
 ### Tell the image what to do when it starts as a container
 CMD ["redis-server"]
 
-## ---------------------------------------------------building-------------------------------------------
+## ---------------------------------------------------building an image-------------------------------------------
 ### docker build .
 ## docker run 9d86
 ## docker build -t dockerId/myrepo:(version) .
