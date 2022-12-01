@@ -22,6 +22,8 @@
 ## docker restart 832 (Restart one or more containers)
 ## docker container stop 832
 ## docker container inspect ff521fa58db3
+## docker container stats 4faca1ea914e3e4587d1d790948ec6cb8fa34f26e900c12632fd64d4722fd59a
+## docker stats 42f170966ce613d2a16d7404495af7b3295e01aeb9142e1fa1762bbdc581f50
 ## docker container prune (WARNING! This will remove:
   - all stopped containers
   - all networks not used by at least one container
@@ -65,4 +67,26 @@
 ## docker system df
 ## docker system info
 
+#------------------------------------------
+ 
+## Building an image example
 
+### Use an existing docker image as a base (base image)
+FROM alpine
+
+
+
+### Download and install a dependency from alpine because alpine has a package manager(apk)
+### cached version used if we are running the second time without changing anything
+RUN apk add --update redis
+RUN apk add --update gcc
+
+### Tell the image what to do when it starts as a container
+CMD ["redis-server"]
+
+## docker build .
+## docker run 9d86
+## docker build -t dockerId/myrepo:(version) .
+###  docker build -t chipmunkey/anynameofmychoice:latest .      (example)
+###  docker build -t chipmunkey/hello-world-java:0.0.2.RELEASE . (. specifies the directory of files/folders to use for the build)
+### docker run chipmunkey/anynameofmychoice                      (latest version of the image will be used by default)
