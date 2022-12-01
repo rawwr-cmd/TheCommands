@@ -67,14 +67,12 @@
 ## docker system df
 ## docker system info
 
-#------------------------------------------
+# ------------------------------------------
  
 ## Building an image example
 
 ### Use an existing docker image as a base (base image)
 FROM alpine
-
-
 
 ### Download and install a dependency from alpine because alpine has a package manager(apk)
 ### cached version used if we are running the second time without changing anything
@@ -84,7 +82,8 @@ RUN apk add --update gcc
 ### Tell the image what to do when it starts as a container
 CMD ["redis-server"]
 
-## docker build .
+## ---------------------------------------------------building-----------------------------------------------------
+### docker build .
 ## docker run 9d86
 ## docker build -t dockerId/myrepo:(version) .
 ###  docker build -t chipmunkey/anynameofmychoice:latest .      (example)
