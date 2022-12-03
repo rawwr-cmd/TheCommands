@@ -20,7 +20,10 @@
 ## kubectl describe deployment
 ## kubectl describe deployment nameOfThedeployment
 ## kubectl delete deployment nameOfTheDeployement
-## kubectl rollout (to rollout a new version)
+## kubectl rollout (to rollout a new version and for help)
+## kubecttl rollout restart deployment (new version updation)
+## kubectl apply -f posts-depl.yaml (to roll out a new version, configure a new version)
+# docker push id/posts (to push to the docker hub)
 
 # ----------------------------------------------------------
 
