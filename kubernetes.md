@@ -89,3 +89,21 @@ In Kubernetes, a load balancer is a type of service that distributes incoming tr
 In Kubernetes, an ingress is a collection of rules that allow inbound connections to reach the cluster services. It is a way to give services externally-reachable URLs, load balance traffic, and offer name-based virtual hosting.
 
 An ingress is defined as a Kubernetes resource, and it can be configured to give services externally-reachable URLs and load balance traffic. It can also be used to offer name-based virtual hosting, which allows you to use the same domain name for multiple service
+
+
+apiVersion: networking.k8s.io/v1 - This line specifies the API version for the ingress resource. It tells Kubernetes which version of the API the ingress object is using.
+kind: Ingress - This line specifies the kind of object that the configuration file defines. In this case, it is defining an ingress object.
+metadata: - This section contains metadata about the ingress object, such as its name and any annotations that are applied to it.
+name: example-ingress - This line specifies the name of the ingress object. This name will be used to identify the ingress in the cluster.
+annotations: - This section contains any annotations that are applied to the ingress object. Annotations are key-value pairs that provide additional information or metadata about the object.
+kubernetes.io/ingress.class: "nginx" - This line specifies the ingress class for the ingress object. In this case, it is set to "nginx", which tells Kubernetes to use the ingress-nginx controller to handle traffic for this ingress.
+spec: - This section contains the specifications or rules for the ingress object. It defines how incoming traffic will be routed to the appropriate services.
+rules: - This section contains an array of ingress rules. Each rule defines how incoming traffic will be routed to a specific service.
+host: example.com - This line specifies the host that the ingress rule applies to. In this case, the rule will only apply to traffic for the example.com host.
+http: - This section contains the HTTP-specific details for the ingress rule. It specifies how HTTP traffic will be routed to the service.
+paths: - This section contains an array of path-based routing rules for the ingress. Each rule specifies a path and a backend service that incoming traffic will be routed to.
+path: / - This line specifies the path that the ingress rule applies to. In this case, the rule will apply to all paths, because the / character matches all paths.
+backend: - This section contains the details of the backend service that incoming traffic will be routed to.
+serviceName: example-service - This line specifies the name of the service that incoming traffic will be routed to. In this case, traffic will be routed to the example-service service.
+servicePort: 80 - This line specifies the port that the service is listening on. In this case, the example-service service is listening on port 80.
+Overall, this configuration file defines an ingress object named example-ingress that uses the ingress-nginx controller to route incoming traffic for the example.com host to the example-service service on port 80. It is a simple example of how to use an ingress to expose a service to the outside world and control how traffic is distributed among the pods in the service.
