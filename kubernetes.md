@@ -1,6 +1,7 @@
 ## kubectl --help
 ## kubectl-k, get-g, describe-d, create-c, apply-a, delete-del (time saving alias)
 ## which k  (code ~/.bashrc)
+## kubectl apply -f . 
 ## kubectl apply -f posts.yaml (This will apply the Deployment defined in the my-deployment.yaml file to your Kubernetes cluster,
    - and create any necessary resources (such as Pods and Services) that are required to run it.)
 ## kubectl get pods (shows the name of each Pod, along with its current readiness and status. we can see that
@@ -23,7 +24,12 @@
 ## kubectl rollout (to rollout a new version and for help)
 ## kubecttl rollout restart deployment (new version updation)
 ## kubectl apply -f posts-depl.yaml (to roll out a new version, configure a new version)
-# docker push id/posts (to push to the docker hub)
+## docker push id/posts (to push to the docker hub)
+
+# services
+## kubectl get services
+## kubectl describe services 
+
 
 # ----------------------------------------------------------
 
@@ -70,3 +76,8 @@ spec:
     - name: posts
       # the exact image we want to use
       image: chipmunkey/posts:0.0.1
+
+Note:
+A cluster IP address is a type of IP address that is used for communication between nodes in a cluster. In a cluster, multiple nodes work together to provide a service, and the cluster IP address is used to facilitate communication between these nodes. This allows the nodes in the cluster to share information and work together to provide the service.
+
+A cluster IP address is different from a regular IP address in that it is only used within the cluster and is not accessible from outside the cluster. This makes it easier to manage the communication within the cluster and helps to improve the performance and reliability of the service provided by the cluster.
