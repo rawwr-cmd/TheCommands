@@ -81,3 +81,11 @@ Note:
 A cluster IP address is a type of IP address that is used for communication between nodes in a cluster. In a cluster, multiple nodes work together to provide a service, and the cluster IP address is used to facilitate communication between these nodes. This allows the nodes in the cluster to share information and work together to provide the service.
 
 A cluster IP address is different from a regular IP address in that it is only used within the cluster and is not accessible from outside the cluster. This makes it easier to manage the communication within the cluster and helps to improve the performance and reliability of the service provided by the cluster.
+
+## loadbalancer
+In Kubernetes, a load balancer is a type of service that distributes incoming traffic evenly among the pods in a deployment. This allows the pods to share the workload and improves the performance and reliability of the deployment.
+
+## ingress
+In Kubernetes, an ingress is a collection of rules that allow inbound connections to reach the cluster services. It is a way to give services externally-reachable URLs, load balance traffic, and offer name-based virtual hosting.
+
+An ingress is defined as a Kubernetes resource, and it can be configured to give services externally-reachable URLs and load balance traffic. It can also be used to offer name-based virtual hosting, which allows you to use the same domain name for multiple service
