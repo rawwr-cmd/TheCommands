@@ -108,3 +108,9 @@ backend: - This section contains the details of the backend service that incomin
 serviceName: example-service - This line specifies the name of the service that incoming traffic will be routed to. In this case, traffic will be routed to the example-service service.
 servicePort: 80 - This line specifies the port that the service is listening on. In this case, the example-service service is listening on port 80.
 Overall, this configuration file defines an ingress object named example-ingress that uses the ingress-nginx controller to route incoming traffic for the example.com host to the example-service service on port 80. It is a simple example of how to use an ingress to expose a service to the outside world and control how traffic is distributed among the pods in the service.
+
+The pathType field in an Ingress resource specifies the type of routing that should be used for requests matching the specified path. The pathType field can be set to either Exact, Prefix, or ImplementationSpecific, and it determines how the Ingress controller will match incoming requests to the specified path.
+
+If pathType is set to Exact, the Ingress controller will only route requests that match the specified path exactly. For example, if the path is /my-service, requests to /my-service will be routed to the specified backend service, but requests to /my-service/foo will not be routed.
+If pathType is set to Prefix, the Ingress controller will route all requests that have the specified path as a prefix. For example, if the path is /my-service, requests to /my-service, /my-service/foo, and /my-service/foo/bar will all be routed to the specified backend service.
+If pathType is set to ImplementationSpecific, the Ingress controller will use its own internal routing algorithm to determine how requests should be routed. This can be useful if you want the Ingress controller to use advanced routing features, such as regex matching or path rewriting.
