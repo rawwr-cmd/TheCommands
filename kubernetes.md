@@ -114,3 +114,6 @@ The pathType field in an Ingress resource specifies the type of routing that sho
 If pathType is set to Exact, the Ingress controller will only route requests that match the specified path exactly. For example, if the path is /my-service, requests to /my-service will be routed to the specified backend service, but requests to /my-service/foo will not be routed.
 If pathType is set to Prefix, the Ingress controller will route all requests that have the specified path as a prefix. For example, if the path is /my-service, requests to /my-service, /my-service/foo, and /my-service/foo/bar will all be routed to the specified backend service.
 If pathType is set to ImplementationSpecific, the Ingress controller will use its own internal routing algorithm to determine how requests should be routed. This can be useful if you want the Ingress controller to use advanced routing features, such as regex matching or path rewriting.
+
+## skaffold 
+### skaffold dev
