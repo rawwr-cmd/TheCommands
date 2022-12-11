@@ -117,3 +117,9 @@ If pathType is set to ImplementationSpecific, the Ingress controller will use it
 
 ## skaffold 
 ### skaffold dev
+
+## Google cloud
+### gcloud topic --help
+### gcloud cheat-sheet
+### gcloud components install kubectl (after closing docker)
+### gcloud container clusters get-credentials <cluster name> (either running docker or not doesn't matter, can work for both) 
