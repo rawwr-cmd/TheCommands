@@ -32,6 +32,12 @@
 ## kubectl get services ingress-nginx-controller --namespace=ingress-nginx
 ## kubectl get pods --all-namespaces -l app.kubernetes.io/name=ingress-nginx
 
+
+# secret key 
+## kubectl create secret generic -n default gitlab-openid-connect --from-env-file=provider.yaml
+## kubectl create secret generic jwt-secret --from-literal=JWT_KEY=rawwr
+## kubectl get secrets
+
 # ----------------------------------------------------------
 
 # deployment (basic yaml file)
