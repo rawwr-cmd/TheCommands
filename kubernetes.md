@@ -29,6 +29,8 @@
 # services
 ## kubectl get services
 ## kubectl describe services 
+## kubectl get namespaces
+## kubectl get services -n ingress-nginx
 ## kubectl get services ingress-nginx-controller --namespace=ingress-nginx
 ## kubectl get pods --all-namespaces -l app.kubernetes.io/name=ingress-nginx
 
