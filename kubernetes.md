@@ -10,6 +10,7 @@
    - This command shows a detailed view of the Pod's current status, labels, and other metadata,
    - as well as any events or warnings that are related to the Pod.)
 ## kubectl exec -it nameOfThePod -- cmd (execute a command inside the pod, -- and space to run the command)
+## kubectl exec -it nameofthepod sh
       - kubectl exec -it posts -- ls  (posts - name of the pod)
       - kubectl exec -it my-pod -c my-container -- ls (when we have more than one container running in the pod, we can specify using the -c flag.)  
 ## kubectl logs nameOfThePod
