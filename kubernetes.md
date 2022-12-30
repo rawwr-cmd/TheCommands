@@ -15,6 +15,7 @@
       - kubectl exec -it my-pod -c my-container -- ls (when we have more than one container running in the pod, we can specify using the -c flag.)  
 ## kubectl logs nameOfThePod
 ## kubectl delete pod nameOfThePod
+## port forwarding of pod - kubectl port-forward nameofthepod 4222:4222
 
 ## For DEPLOYEMENET
 ## kubectl create -f posts-depl.yaml (or kubectl apply -f posts-depl.yaml)
