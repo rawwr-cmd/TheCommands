@@ -92,3 +92,4 @@ CMD ["redis-server"]
 ### docker compose -f docker-compose.dev.yaml up -d
 ### docker compose -f docker-compose.dev.yaml ps
 ### docker compose -f docker-compose.dev.yaml stop
+### docker compose -f docker-compose.dev.ymal exec react_project bash
