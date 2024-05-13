@@ -91,3 +91,4 @@ CMD ["redis-server"]
 ### docker run chipmunkey/anynameofmychoice                      (latest version of the image will be used by default)
 ### docker compose -f docker-compose.dev.yaml up -d
 ### docker compose -f docker-compose.dev.yaml ps
+### docker compose -f docker-compose.dev.yaml stop
