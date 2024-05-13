@@ -89,3 +89,5 @@ CMD ["redis-server"]
 ###  docker build -t chipmunkey/anynameofmychoice:latest .      (example)
 ###  docker build -t chipmunkey/hello-world-java:0.0.2.RELEASE . (. specifies the directory of files/folders to use for the build, t for tagging)
 ### docker run chipmunkey/anynameofmychoice                      (latest version of the image will be used by default)
+### docker compose -f docker-compose.dev.yaml up -d
+### docker compose -f docker-compose.dev.yaml ps
